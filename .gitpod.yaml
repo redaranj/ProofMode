@@ -1,0 +1,19 @@
+tasks:
+  - init: >
+      pip install -r "requirements.txt";
+    command: >
+      pip install -r "requirements.txt";
+
+ports:
+  - port: 9000-9099
+    onOpen: ignore
+
+image:
+  file: .gitpod.Dockerfile
+
+vscode:
+  extensions:
+    - ms-toolsai.jupyter
+    - ms-toolsai.jupyter-renderers
+    - ms-python.python
+    - vscode.python
